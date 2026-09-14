@@ -11,7 +11,7 @@ Pipeline: **ingest → query rewrite → Chroma retrieve → rerank → generate
 </p>
 
 <p align="center">
-  <a href="https://your-app.onrender.com"><b>For more, try the live demo →</b></a>
+  <a href="https://rag-insurellm.onrender.com"><b>For more, try the live demo →</b></a>
 </p>
 
 ---
