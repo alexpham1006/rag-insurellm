@@ -1,0 +1,29 @@
+[project]
+name = "rag-insurellm"
+version = "0.1.0"
+description = "Insurellm RAG knowledge worker"
+readme = "README.md"
+authors = [
+    { name = "Alex", email = "phamvanchien23062017@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "chromadb>=0.5,<0.6",
+    "gradio>=6.27.0",
+    "litellm>=1.83.0",
+    "onnxruntime==1.19.2",
+    "openai>=3.13.0",
+    "pandas>=3.0.5",
+    "pydantic>=2.13.5",
+    "python-dotenv>=1.2.3",
+    "tenacity>=9.1.4",
+    "tqdm>=4.70.1",
+]
+
+[project.scripts]
+rag-ingest = "rag_insurellm.ingest:main"
+rag-chat = "rag_insurellm.app:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"

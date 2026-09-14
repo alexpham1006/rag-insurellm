@@ -1,0 +1,30 @@
+{
+  "retrieval": {
+    "mrr": 0.8883472222222222,
+    "ndcg": 0.8627841587595156,
+    "keyword_coverage": 95.93333333333334,
+    "by_category": [
+      {"Category": "comparative", "Average MRR": 0.875},
+      {"Category": "direct_fact", "Average MRR": 0.9194841269841271},
+      {"Category": "holistic", "Average MRR": 0.6805555555555556},
+      {"Category": "numerical", "Average MRR": 0.9666666666666666},
+      {"Category": "relationship", "Average MRR": 1.0},
+      {"Category": "spanning", "Average MRR": 0.7242708333333333},
+      {"Category": "temporal", "Average MRR": 0.9590277777777778}
+    ]
+  },
+  "answer": {
+    "accuracy": 4.566666666666666,
+    "completeness": 4.293333333333333,
+    "relevance": 4.866666666666666,
+    "by_category": [
+      {"Category": "comparative", "Average Accuracy": 4.7},
+      {"Category": "direct_fact", "Average Accuracy": 4.828571428571428},
+      {"Category": "holistic", "Average Accuracy": 2.6},
+      {"Category": "numerical", "Average Accuracy": 5.0},
+      {"Category": "relationship", "Average Accuracy": 4.6},
+      {"Category": "spanning", "Average Accuracy": 4.55},
+      {"Category": "temporal", "Average Accuracy": 4.35}
+    ]
+  }
+}
