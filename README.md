@@ -4,16 +4,30 @@ RAG demo for the fictional company **Insurellm**: ask questions over a markdown 
 
 Pipeline: **ingest → query rewrite → Chroma retrieve → rerank → generate**.
 
-## Preview
+## Demo
 
 <p align="center">
-  <img src="assets/chat.png" width="90%" alt="Chat UI" />
+  <img src="assets/chat.png" width="90%" alt="Insurellm RAG Chat UI" />
+</p>
+
+<!-- <p align="center">
+  <a href="https://rag-insurellm.onrender.com" target="_blank" rel="noopener noreferrer">
+    <b>🚀 Try the live demo →</b>
+  </a>
 </p>
 
 <p align="center">
-  <a href="https://rag-insurellm.onrender.com" target="_blank" rel="noopener noreferrer"><b>For more, try the live demo →</b></a>
+  <sub>Hosted on Render's free tier · The first request after inactivity may take around a minute to wake up.</sub>
+</p> -->
+
+<p align="center">
+  <a href="https://rag-insurellm.onrender.com">
+    <b>🚀 Try the live demo →</b>
+  </a>
 </p>
 
+> **Note:** The demo is hosted on Render's free tier, so the first request after
+> inactivity may take around a minute to wake up.
 ---
 
 ## What’s included
