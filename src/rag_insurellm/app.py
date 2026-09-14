@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import os
+
 import gradio as gr
 
 from rag_insurellm.evaluate import (
@@ -61,7 +63,13 @@ def main():
         run_answer_eval=run_answer_eval,
     )
     theme = gr.themes.Soft(primary_hue="purple", font=["Inter", "system-ui", "sans-serif"])
-    demo.launch(inbrowser=True, theme=theme, css=CSS, head=HEAD)
+    demo.launch(
+        server_name="0.0.0.0",
+        server_port=int(os.environ.get("PORT", 10000)),
+        theme=theme,
+        css=CSS,
+        head=HEAD,
+    )
 
 
 if __name__ == "__main__":
