@@ -1,9 +1,22 @@
+import os
 from pathlib import Path
 
 from dotenv import load_dotenv
 from tenacity import wait_exponential
 
-ROOT = Path(__file__).resolve().parents[2]
+
+def _find_root() -> Path:
+    if env := os.environ.get("RAG_ROOT"):
+        return Path(env).resolve()
+    markers = ("pyproject.toml", "data/tests.jsonl")
+    here = Path(__file__).resolve().parent
+    for candidate in [here, *here.parents, Path.cwd()]:
+        if any((candidate / m).exists() for m in markers):
+            return candidate
+    return Path.cwd()
+
+
+ROOT = _find_root()
 load_dotenv(ROOT / ".env", override=True)
 
 KNOWLEDGE_BASE_PATH = ROOT / "data" / "knowledge-base"

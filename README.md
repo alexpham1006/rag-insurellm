@@ -4,6 +4,16 @@ RAG demo for the fictional company **Insurellm**: ask questions over a markdown 
 
 Pipeline: **ingest → query rewrite → Chroma retrieve → rerank → generate**.
 
+## Preview
+
+<p align="center">
+  <img src="assets/chat.png" width="90%" alt="Chat UI" />
+</p>
+
+<p align="center">
+  <a href="https://your-app.onrender.com"><b>For more, try the live demo →</b></a>
+</p>
+
 ---
 
 ## What’s included
